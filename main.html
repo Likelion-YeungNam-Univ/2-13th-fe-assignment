@@ -3,7 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <div id="inner">
+        <div class="flexBox" id="leftDiv">
+          <div id="titleContainer">
+            <img src="likelion.png" alt="멋사로고" id="titleImg" />
+            <div id="titleText">
+              <span>영남대학교</span>
+              <span>멋쟁이사자처럼</span>
+              <span>13기</span>
+            </div>
+          </div>
+          <div id="contentContainer">
+            <div class="contentText">
+              <span>여러분을 진심으로 환영합니다!</span>
+            </div>
+            <br />
+            <br />
+            <div class="contentText">
+              <span>
+                멋쟁이사자처럼은 '성장 의지를 가진 사람들을 돕기 위해
+                존재합니다. 그리고 이들을 돕기 위한 가장 근본적이고 효과적인
+                방법은 교육이라고 생각합니다!
+              </span>
+            </div>
+          </div>
+          <div id="selectContainer">
+            <div class="selectItem">P&D</div>
+            <div class="selectItem">FE</div>
+            <div class="selectItem">BE</div>
+          </div>
+        </div>
+        <div class="flexBox" id="rightDiv">
+          <form id="loginForm">
+            <div id="loginHeader">
+              <span>LOGIN</span>
+            </div>
+            <div id="inputDiv">
+              <input type="text" name="username" placeholder="username" />
+              <input type="password" name="password" placeholder="password" />
+            </div>
+            <button>로그인</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

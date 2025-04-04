@@ -1,0 +1,135 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inner {
+  width: 1500px;
+  height: 700px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+}
+
+.flexBox {
+  flex: 1;
+  display: flex;
+}
+
+#leftDiv {
+  /* background-color: blue; */
+  flex-direction: column;
+}
+
+#rightDiv {
+  /* background-color: green; */
+  justify-content: end;
+  align-items: center;
+}
+
+#titleContainer {
+  display: flex;
+  flex-direction: row;
+  flex: 0.8;
+}
+#titleImg {
+  height: 150px;
+  width: 280px;
+}
+#titleText {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* background-color: yellow; */
+}
+
+#titleText > span {
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+}
+#contentContainer {
+  margin-top: 30px;
+  flex: 1;
+}
+
+.contentText > span {
+  color: white;
+  font-size: 25px;
+}
+#selectContainer {
+  /* height: 300px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  /* background-color: blue; */
+  flex: 1.4;
+  gap: 15px;
+}
+.selectItem {
+  /* background-color: red; */
+  flex: 1;
+  border-radius: 35px;
+  border: 2px solid #f09837;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: black;
+  font-weight: bold;
+}
+
+#loginForm {
+  width: 430px;
+  height: 300px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loginHeader > span {
+  font-style: italic;
+  font-size: 35px;
+  color: white;
+  font-weight: 600;
+}
+#inputDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  margin-top: 30px;
+}
+input {
+  border-radius: 100px;
+  border: none;
+  height: 55px;
+  font-size: 25px;
+  color: #7f7f7f;
+  padding-left: 25px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #f09937;
+  color: white;
+  font-size: 25px;
+  border: none;
+  border-radius: 100px;
+  margin-top: 20px;
+}
