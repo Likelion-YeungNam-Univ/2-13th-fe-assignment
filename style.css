@@ -75,6 +75,9 @@ body {
   color: white;
   font-size: 1rem;
 }
+#onlyLoginBtn {
+  display: none;
+}
 #selectContainer {
   /* height: 300px; */
   display: flex;
@@ -136,7 +139,7 @@ input {
   padding-left: 1rem;
 }
 
-button {
+.loginBtn {
   width: 8rem;
   height: 2rem;
   background-color: #f09937;
@@ -189,6 +192,9 @@ button {
   #titleContainer {
     justify-content: center;
   }
+  #contentContainer {
+    margin-top: 4rem;
+  }
   .contentText {
     text-align: center;
   }
@@ -196,9 +202,33 @@ button {
     display: flex;
     flex-direction: column;
   }
+  #leftDiv {
+    justify-content: start;
+  }
+  #rightDiv {
+    /* display: none; */
+    justify-content: center;
+  }
+  #loginForm {
+    display: none;
+  }
+  #selectContainer {
+    margin-top: 5rem;
+  }
   .selectItem {
     width: 13rem;
     height: 15rem;
+  }
+  /* #rightDiv {
+    justify-content: center;
+  } */
+  #loginBtnContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  #onlyLoginBtn {
+    display: block;
   }
 }
 @media (max-width: 620px) {
