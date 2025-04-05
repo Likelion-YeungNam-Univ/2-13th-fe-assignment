@@ -115,13 +115,24 @@ body {
 }
 #loginForm {
   width: 17.2rem;
-  height: 12rem;
+  height: 20rem;
   /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-
+#loginForm.active {
+  display: flex;
+  /* position: absolute;
+  top: 18rem; */
+  width: 70%;
+}
+#formLoginBtn.active {
+  width: 40%;
+  height: 3rem;
+  margin-top: 1.5rem;
+}
 #loginHeader > span {
   font-style: italic;
   font-size: 1.4rem;
@@ -156,10 +167,12 @@ input {
   font-size: 1rem;
   border: none;
   border-radius: 4rem;
-  margin-top: 0.8rem;
+  margin-top: 0.7rem;
   cursor: pointer;
 }
-
+#formBackBtn {
+  display: none;
+}
 .loginBtn:hover {
   transform: scale(1.02);
   background-color: #f3a94d;
@@ -167,6 +180,18 @@ input {
 .loginBtn:active {
   transform: scale(0.98);
   background-color: #d9822f;
+}
+#selectContainer.hide,
+#loginBtnContainer.hide,
+#contentContainer.hide {
+  display: none;
+}
+#usernameInput.active,
+#passwordInput.active {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.8rem;
+  padding-left: 1.5rem;
 }
 @media ((max-width: 1280px) or (max-height:850px)) {
   html {
@@ -225,14 +250,16 @@ input {
   }
   #rightDiv {
     /* display: none; */
+    align-items: start;
     justify-content: center;
   }
   #loginForm {
     display: none;
   }
   #selectContainer {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
+
   .selectItem {
     width: 13rem;
     height: 15rem;
@@ -243,7 +270,7 @@ input {
   #loginBtnContainer {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   #onlyLoginBtn {
     display: block;

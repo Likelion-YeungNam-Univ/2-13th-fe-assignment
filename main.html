@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <script src="main.js"></script>
   </head>
   <body>
     <div id="container">
@@ -33,7 +34,13 @@
             </div>
           </div>
           <div id="loginBtnContainer">
-            <button id="onlyLoginBtn" class="loginBtn">로그인</button>
+            <button
+              id="onlyLoginBtn"
+              class="loginBtn"
+              onclick="clickLoginBtn()"
+            >
+              로그인
+            </button>
           </div>
           <div id="selectContainer">
             <div class="selectItem">P&D</div>
@@ -48,16 +55,57 @@
             </div>
             <div id="inputContainer">
               <div class="inputDiv">
-                <input type="text" name="username" placeholder="username" />
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="username"
+                  id="usernameInput"
+                />
               </div>
               <div class="inputDiv">
-                <input type="password" name="password" placeholder="password" />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="password"
+                  id="passwordInput"
+                />
               </div>
             </div>
-            <button id="FormLoginBtn" class="loginBtn">로그인</button>
+            <div>
+              <button id="formBackBtn">뒤로가기</button>
+              <button id="formLoginBtn" class="loginBtn">로그인</button>
+            </div>
           </form>
         </div>
       </div>
     </div>
+    <script>
+      const clickLoginBtn = () => {
+        const loginForm = document.getElementById("loginForm");
+        const selectContainer = document.getElementById("selectContainer");
+        const loginBtnContainer = document.getElementById("loginBtnContainer");
+        const contentContainer = document.getElementById("contentContainer");
+        const usernameInput = document.getElementById("usernameInput");
+        const passwordInput = document.getElementById("passwordInput");
+        const formLoginBtn = document.getElementById("formLoginBtn");
+        const loginHeaderSpan = document
+          .getElementById("loginHeader")
+          .querySelector("span");
+        const leftDiv = document.getElementById("leftDiv");
+        const rightDiv = document.getElementById("rightDiv");
+
+        loginForm.classList.toggle("active");
+        selectContainer.classList.toggle("hide");
+        loginBtnContainer.classList.toggle("hide");
+        contentContainer.classList.toggle("hide");
+        usernameInput.classList.toggle("active");
+        passwordInput.classList.toggle("active");
+        formLoginBtn.classList.toggle("active");
+
+        loginHeaderSpan.style.display = "none";
+        leftDiv.style.flex = "1";
+        rightDiv.style.flex = "7";
+      };
+    </script>
   </body>
 </html>
