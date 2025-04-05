@@ -108,13 +108,6 @@ body {
     display: center;
 }
 
-.boxcontainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    width: 470px;
-}
-
 #PD, #BE, #FE {
     height: 150px;
     width: 110px;
@@ -168,5 +161,4 @@ body {
     height: 27px;
     font-size: 13px;
     border: none;
-
 }
