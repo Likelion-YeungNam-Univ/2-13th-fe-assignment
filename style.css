@@ -110,11 +110,34 @@ body {
 		font-size: 50px;
 	}
 
+	#login-form > h1 {
+		font-size: 70px;
+	}
+
 	.track-cards {
 		gap: 20px;
 	}
 
 	.track-card {
 		width: 300px;
+	}
+}
+
+@media (max-width: 836px) {
+	body {
+		margin: 10px;
+		margin-bottom: 100px;
+	}
+
+	.logo-section {
+		flex-direction: column;
+	}
+
+	.logo-img {
+		width: 80%;
+	}
+
+	.logo-title {
+		font-size: 70px;
 	}
 }
