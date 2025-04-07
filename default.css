@@ -1,0 +1,162 @@
+@media ((max-width: 1280px) or (max-height:850px)) {
+  html {
+    font-size: 23px;
+  }
+}
+
+@media ((max-width: 1160px) or (max-height:760px)) {
+  html {
+    font-size: 21px;
+  }
+  .selectItem {
+    height: 12rem;
+  }
+}
+@media ((max-width: 1080px) or (max-height:700px)) {
+  html {
+    font-size: 19px;
+  }
+  .selectItem {
+    height: 12rem;
+  }
+}
+@media (max-width: 960px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 810px) {
+  html {
+    font-size: 14px;
+  }
+  .selectItem {
+    width: 9rem;
+  }
+}
+@media (max-width: 710px) {
+  html {
+    font-size: 14px;
+  }
+  #titleContainer {
+    justify-content: center;
+  }
+  #contentContainer {
+    margin-top: 4rem;
+  }
+  .contentText {
+    text-align: center;
+  }
+  #inner {
+    display: flex;
+    flex-direction: column;
+  }
+  #leftDiv {
+    justify-content: start;
+  }
+  #rightDiv {
+    /* display: none; */
+    align-items: start;
+    justify-content: center;
+  }
+  #loginForm {
+    display: none;
+  }
+  #selectContainer {
+    margin-top: 3rem;
+  }
+
+  .selectItem {
+    width: 13rem;
+    height: 15rem;
+  }
+
+  #loginBtnContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  #onlyLoginBtn {
+    display: block;
+  }
+}
+@media (max-width: 620px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 460px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 370px) {
+  html {
+    font-size: 6px;
+  }
+}
+.loginBtn:active {
+  transform: scale(0.98);
+  background-color: #d9822f;
+}
+#selectContainer.hide,
+#loginBtnContainer.hide,
+#contentContainer.hide {
+  display: none;
+}
+.inputDiv.active {
+  height: 4rem;
+}
+
+#usernameInput.active,
+#passwordInput.active {
+  width: 100%;
+  /* height: 4rem; */
+  font-size: 1.8rem;
+  padding-left: 4rem;
+}
+
+#loginForm.active {
+  display: flex;
+  /* position: absolute;
+   top: 18rem; */
+  width: 80%;
+}
+#formLoginBtn.active {
+  width: 45%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+#formBackBtn.active {
+  display: block;
+  width: 45%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+#formBackBtn.active:hover {
+  transform: scale(1.02);
+  background-color: #a0a0a0;
+}
+#formBackBtn.active:active {
+  transform: scale(0.98);
+  background-color: #909090;
+}
+#btnDiv.active {
+  width: 80%;
+  height: 3rem;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+.icon.active {
+  width: 1.8rem;
+  height: 1.8rem;
+  left: 1rem;
+}
+.selectItem:active {
+  transform: scale(0.98);
+  background-color: #e08530;
+}
