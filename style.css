@@ -49,6 +49,7 @@ body {
 .list a {
     color: var(--text-color);
     text-decoration: none;
+    transition: color 0.3s;
 }
   
 .list a:hover {
@@ -136,6 +137,7 @@ body {
 }
   
 .box-txt:hover {
+    transition: color 0.3s;
     background-color: orange;
     color: white;
 }
@@ -151,6 +153,24 @@ body {
     margin-bottom: 200px;
 }
 
+.mobile-login {
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-form.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 .login-head {
     color: white;
     font-size: 30px;
@@ -187,6 +207,8 @@ body {
     width: 120px;
     height: 30px;
     cursor: pointer;
+    transition: transform 0.5s;
+    margin: 20px auto;
 }
 
 .submit:active {
@@ -241,6 +263,7 @@ body {
         font-size: 20px;
     }
 }
+
 @media screen and (max-width: 767px) {
     #title,
     .intro,
@@ -291,8 +314,25 @@ body {
         height: auto;
     }
     
+    .mobile-login {
+        display: block;
+    }
+
     .list_bar {
         display: block;
+    }
+
+    .login-container.show,
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .login-form {
+        display: none;
     }
     
     .list {

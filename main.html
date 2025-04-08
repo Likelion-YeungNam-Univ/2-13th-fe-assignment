@@ -43,7 +43,7 @@
       <div class = "right-container">
         <div class ="login-container">
           <div class="login-head">LOGIN</div>
-          <div>
+          <div class ="login-form">
             <form>
               <div class = "input-container">
                 <span id="icon">  
@@ -61,11 +61,15 @@
                 </span>
                 <input type ="text" id="login" name="password" placeholder="password" required />
               </div>
+              <button type = button class="submit">로그인</button> 
             </form>
           </div>     
-          <button type = button class="submit">로그인</button> 
+          <button type = button class="mobile-login">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9v4H4v8h16v-8h-1v-4c0-3.87-3.13-7-7-7zm0 2c3.31 0 6 2.69 6 6v4H6v-4c0-3.31 2.69-6 6-6z" fill="#888"/>
+            </svg>
+          </button> 
         </div>
-        <button type = button class="mobile-login">로그인</button>
       </div>
     </div>
   </body>
