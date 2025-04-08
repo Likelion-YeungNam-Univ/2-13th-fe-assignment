@@ -109,7 +109,14 @@ body {
   transform: scale(1.05);
   background-color: #f3a94d;
 }
-
+.selectItem:active {
+  transform: scale(0.98);
+  background-color: #e08530;
+}
+.loginBtn:active {
+  transform: scale(0.98);
+  background-color: #d9822f;
+}
 #loginForm {
   width: 17.2rem;
   height: 20rem;

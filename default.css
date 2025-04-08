@@ -99,10 +99,7 @@
     font-size: 6px;
   }
 }
-.loginBtn:active {
-  transform: scale(0.98);
-  background-color: #d9822f;
-}
+
 #selectContainer.hide,
 #loginBtnContainer.hide,
 #contentContainer.hide {
@@ -155,8 +152,4 @@
   width: 1.8rem;
   height: 1.8rem;
   left: 1rem;
-}
-.selectItem:active {
-  transform: scale(0.98);
-  background-color: #e08530;
 }
