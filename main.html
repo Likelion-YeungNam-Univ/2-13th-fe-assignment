@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>영남대 멋쟁이사자처럼 13기</title>
+    <title>영남대 멋쟁이사자처럼 13기 반응형 Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
+    <script scr="./main.js" defer></script>
   </head>
   <body>
+    <div class="list_bar">
+      <button class="list_button">☰</button>
+    </div>
+    <nav class="list">
+        <a href="#">P&D</a>
+        <a href="#">FE</a>
+        <a href="#">BE</a>
+    </nav>
     <div class = "main-container">
       <div class = "left-container">
         <div class = "intro-container">
           <img src="likelion.png" alt="13th-fe-likelion" width="240px"/>
-          <div id="title">영남대학교<br>멋쟁이사자처럼<br>13기</div>
+          <div id="title">
+            <div>영남대학교</div>
+            <div>멋쟁이사자처럼럼</div>
+            <div>13기</div>
+          </div>
         </div>
         <div class ="intro">
           <div id="intro-txt">여러분을 진심으로 환영합니다!</div>
@@ -21,11 +35,9 @@
           </div>
         </div>
         <div class = "box-container">
-          <div class = "textbox">
-            <div id="box-txt">P&D</div>
-            <div id="box-txt">FE</div>
-            <div id="box-txt">BE</div>
-          </div> 
+          <div class="box-txt">P&D</div>
+          <div class="box-txt">FE</div>
+          <div class="box-txt">BE</div>
         </div>
       </div>
       <div class = "right-container">
@@ -51,8 +63,9 @@
               </div>
             </form>
           </div>     
-          <button type = button class="submit">로그인</button>  
+          <button type = button class="submit">로그인</button> 
         </div>
+        <button type = button class="mobile-login">로그인</button>
       </div>
     </div>
   </body>
