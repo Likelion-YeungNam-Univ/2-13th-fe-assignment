@@ -3,7 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="default.css" />
     <title>Document</title>
+    <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <div id="inner">
+        <div class="flexBox" id="leftDiv">
+          <div id="titleContainer">
+            <img src="likelion.png" alt="멋사로고" id="titleImg" />
+            <div id="titleText">
+              <span>영남대학교</span>
+              <span>멋쟁이사자처럼</span>
+              <span>13기</span>
+            </div>
+          </div>
+          <div id="contentContainer">
+            <div class="contentText">
+              <span>여러분을 진심으로 환영합니다!</span>
+            </div>
+            <br />
+            <br />
+            <div class="contentText">
+              <span>
+                멋쟁이사자처럼은 '성장 의지를 가진 사람들을 돕기 위해
+                존재합니다. 그리고 이들을 돕기 위한 가장 근본적이고 효과적인
+                방법은 교육이라고 생각합니다!
+              </span>
+            </div>
+          </div>
+          <div id="loginBtnContainer">
+            <button
+              id="onlyLoginBtn"
+              class="loginBtn"
+              onclick="clickLoginBtn()"
+            >
+              로그인
+            </button>
+          </div>
+          <div id="selectContainer">
+            <div class="selectItem">P&D</div>
+            <div class="selectItem">FE</div>
+            <div class="selectItem">BE</div>
+          </div>
+        </div>
+        <div class="flexBox" id="rightDiv">
+          <form id="loginForm">
+            <div id="loginHeader">
+              <span>LOGIN</span>
+            </div>
+            <div id="inputContainer">
+              <div class="inputDiv">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="username"
+                  id="usernameInput"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="inputDiv">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="password"
+                  id="passwordInput"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div id="btnDiv">
+              <button type="button" id="formBackBtn" onClick="clickBackBtn()">
+                뒤로가기
+              </button>
+              <button type="submit" id="formLoginBtn" class="loginBtn">
+                로그인
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

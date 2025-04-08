@@ -1,0 +1,200 @@
+html {
+  font-size: 25px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inner {
+  padding: 0 1.6rem;
+  width: 60rem;
+  /* height: 28rem; */
+  height: 80%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 4rem; */
+}
+
+.flexBox {
+  flex: 1;
+  display: flex;
+}
+
+#leftDiv {
+  /* background-color: blue; */
+  flex-direction: column;
+  justify-content: center;
+}
+
+#rightDiv {
+  /* background-color: green; */
+  justify-content: end;
+  align-items: center;
+}
+
+#titleContainer {
+  display: flex;
+  flex-direction: row;
+  /* flex: 0.8; */
+}
+#titleImg {
+  height: 6rem;
+  width: 11.2rem;
+}
+#titleText {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* background-color: yellow; */
+}
+
+#titleText > span {
+  color: white;
+  font-size: 1.52rem;
+  font-weight: bold;
+}
+#contentContainer {
+  margin-top: 1.2rem;
+  /* flex: 1; */
+}
+
+.contentText > span {
+  color: white;
+  font-size: 1rem;
+}
+#onlyLoginBtn {
+  display: none;
+}
+#selectContainer {
+  /* height: 300px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  /* background-color: blue; */
+  /* flex: 1.4; */
+  gap: 0.6rem;
+}
+.selectItem {
+  /* background-color: red; */
+  /* flex: 1; */
+  width: 9.5rem;
+  height: 12rem;
+  border-radius: 1.4rem;
+  border: 0.08rem solid #f09837;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.selectItem:hover {
+  transform: scale(1.05);
+  background-color: #f3a94d;
+}
+.selectItem:active {
+  transform: scale(0.98);
+  background-color: #e08530;
+}
+.loginBtn:active {
+  transform: scale(0.98);
+  background-color: #d9822f;
+}
+#loginForm {
+  width: 17.2rem;
+  height: 20rem;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginHeader > span {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+}
+#inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  align-items: center;
+}
+.inputDiv {
+  position: relative;
+  height: 2.2rem;
+  width: 80%;
+}
+input {
+  border-radius: 4rem;
+  border: none;
+  height: 100%;
+  font-size: 1rem;
+  color: #7f7f7f;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+}
+.icon {
+  fill: #7f7f7f;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#btnDiv {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+}
+.loginBtn {
+  width: 8rem;
+  height: 2rem;
+  background-color: #f09937;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4rem;
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+#formBackBtn {
+  display: none;
+  width: 8rem;
+  height: 2rem;
+  background-color: grey;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4rem;
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+.loginBtn:hover {
+  transform: scale(1.02);
+  background-color: #f3a94d;
+}
