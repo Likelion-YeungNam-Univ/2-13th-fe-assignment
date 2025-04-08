@@ -4,6 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!-- 화면 쪼개기 - 왼쪽 -->
+    <div class="page_left">
+      <!-- 이미지와 제목을 묶음으로 -->
+      <div class="container" id="logo">
+        <img src="likelion.png" />
+        <div>
+          <h1>영남대학교</h1>
+          <h1>멋쟁이사자처럼</h1>
+          <h1>13기</h1>
+          <h1 class="small_logo">YU LikeLion 13th</h1>
+        </div>
+      </div>
+
+      <!-- 두 문단을 묶음으로 + id 지정 -->
+      <div class="container" id="text">
+        <p>여러분을 진심으로 환영합니다!</p>
+        <p>
+          멋쟁이사자처럼은 성장 의지를 가진 사람들을 돕기 위해 존재합니다.
+          그리고 이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라고
+          생각합니다!
+        </p>
+      </div>
+
+      <!-- 3개의 키워드를 묶음으로 -->
+      <div class="container" id="keyword">
+        <h3>P&D</h3>
+        <h3>FE</h3>
+        <h3>BE</h3>
+      </div>
+    </div>
+
+    <!-- 화면 쪼개기 - 오른쪽 -->
+    <form class="page_right">
+      <h2>LOGIN</h2>
+      <!-- 아이콘과 input을 묶음으로 -->
+      <div class="container">
+        <!-- 사람 모양 svg -->
+        <svg
+          fill="gray"
+          height="57"
+          width="26"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#000000"
+          width="800px"
+          height="800px"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"
+          />
+        </svg>
+        <input type="text" name="username" placeholder="USERNAME" />
+      </div>
+      <!-- 아이콘과 input을 묶음으로 -->
+      <div class="container">
+        <!-- 좌물쇠 모양 svg -->
+        <svg
+          fill="gray"
+          height="57"
+          width="26"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#000000"
+          width="800px"
+          height="800px"
+          viewBox="0 -8 72 72"
+          id="Layer_1"
+          data-name="Layer 1"
+        >
+          <path
+            d="M54.39,22.46H51.62V15.62a15.62,15.62,0,0,0-31.24,0v6.84H17.61A1.61,1.61,0,0,0,16,24.07V54.38A1.61,1.61,0,0,0,17.61,56H54.39A1.61,1.61,0,0,0,56,54.38V24.07A1.61,1.61,0,0,0,54.39,22.46ZM38.52,40.9v6.46a1,1,0,0,1-1,1h-3a1,1,0,0,1-1-1V40.9a4.36,4.36,0,1,1,5,0Zm5.64-18.44H27.84V15.62a8.16,8.16,0,1,1,16.32,0v6.84Z"
+          />
+        </svg>
+        <input type="password" name="password" placeholder="PASSWORD" />
+      </div>
+      <button>로그인</button>
+    </form>
+  </body>
 </html>
