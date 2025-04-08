@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="./login.js" defer></script>
-</head>
-<body>
-        <div class="container">
-            <div class="box" id="left">
-                <div class="box" id="top">
-                    <div class="box" id="image">
-                        <img src="likelion.png" style="width: 200px" alt="멋사로고" />
-                    </div>
-                    <div class="box" id="text">
-                        <div>영남대학교</div>
-                        <div>멋쟁이사자처럼</div>
-                        <div>13기</div>
-                    </div>
-                </div>  
-                <div class="box" id="infobox">
-                    <div class="clear">여러분을 진심으로 환영합니다!</div>
-                    <br>
-                    <p>멋쟁이사자처럼은 성장 의지를 가진 사람들을 돕기 위해 존재합니다. 그리고 이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라고 생각합니다!</p>
-                    <div id="PD"><h2>P&D</h2></div>
-                    <div id="BE"><h2>BE</h2></div>
-                    <div id="FE"><h2>FE</h2></div>
-                </div>
-            </div>
-            <div class="box" id="right">
-                <div class="box" id="loginbox">
-                    <h2>LOGIN</h2>
-                    <div class="form">
-                        <div class="inputicons">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#787878" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
-                            </svg>
-                            <input type="text" name="username" placeholder="username" />
-                        </div>
-                        <br>
-                        <div class="inputicons">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256"> <g fill="#6c6c6c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-6.63672,0 -12,5.36328 -12,12v5h-4c-1.69922,0 -3,1.30078 -3,3v24c0,1.69922 1.30078,3 3,3h32c1.69922,0 3,-1.30078 3,-3v-24c0,-1.69922 -1.30078,-3 -3,-3h-4v-5c0,-6.63672 -5.36328,-12 -12,-12zM25,5c5.56641,0 10,4.43359 10,10v5h-20v-5c0,-5.56641 4.43359,-10 10,-10zM25,30c1.69922,0 3,1.30078 3,3c0,0.89844 -0.39844,1.6875 -1,2.1875v2.8125c0,1.10156 -0.89844,2 -2,2c-1.10156,0 -2,-0.89844 -2,-2v-2.8125c-0.60156,-0.5 -1,-1.28906 -1,-2.1875c0,-1.69922 1.30078,-3 3,-3z"></path></g></g>
-                            </svg>
-                            <input type="password" name="password" placeholder="password" />
-                        </div>
-                        <br>
-                        <button type="submit">로그인</button>
-                    </div>
-                </div>
-            </div>
-            <div class="loginicon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#dc9c4d" d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
-            </div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="left">
+        <div class="box" id="top">
+          <div class="box" id="image">
+            <img src="likelion.png" alt="멋사로고" />
+          </div>
+          <div class="box" id="text">
+            <div>영남대학교</div>
+            <div>멋쟁이사자처럼</div>
+            <div>13기</div>
+          </div>
         </div>
-</body>
+        <div class="box" id="infobox">
+          <div class="clear">여러분을 진심으로 환영합니다!</div>
+          <br />
+          <p>
+            멋쟁이사자처럼은 성장 의지를 가진 사람들을 돕기 위해 존재합니다.
+            그리고 이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라고
+            생각합니다!
+          </p>
+          <div id="PD"><h2>P&D</h2></div>
+          <div id="BE"><h2>BE</h2></div>
+          <div id="FE"><h2>FE</h2></div>
+        </div>
+      </div>
+      <div class="box" id="right">
+        <div class="box" id="loginbox">
+          <h2>LOGIN</h2>
+          <div class="form">
+            <div class="inputicons">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  fill="#787878"
+                  d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                />
+              </svg>
+              <input type="text" name="username" placeholder="username" />
+            </div>
+            <br />
+            <div class="inputicons">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0,0,256,256"
+              >
+                <g
+                  fill="#6c6c6c"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M25,3c-6.63672,0 -12,5.36328 -12,12v5h-4c-1.69922,0 -3,1.30078 -3,3v24c0,1.69922 1.30078,3 3,3h32c1.69922,0 3,-1.30078 3,-3v-24c0,-1.69922 -1.30078,-3 -3,-3h-4v-5c0,-6.63672 -5.36328,-12 -12,-12zM25,5c5.56641,0 10,4.43359 10,10v5h-20v-5c0,-5.56641 4.43359,-10 10,-10zM25,30c1.69922,0 3,1.30078 3,3c0,0.89844 -0.39844,1.6875 -1,2.1875v2.8125c0,1.10156 -0.89844,2 -2,2c-1.10156,0 -2,-0.89844 -2,-2v-2.8125c-0.60156,-0.5 -1,-1.28906 -1,-2.1875c0,-1.69922 1.30078,-3 3,-3z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <input type="password" name="password" placeholder="password" />
+            </div>
+            <br />
+            <button type="submit">로그인</button>
+          </div>
+        </div>
+      </div>
+      <div class="loginicon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            fill="#dc9c4d"
+            d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
 </html>
-
-<!-- margin: 5px auto; -->
