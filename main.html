@@ -3,7 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>영남대 멋쟁이사자처럼 13기 반응형 Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js" defer></script>
   </head>
-  <body></body>
-</html>
+  <body>
+    <div class="list_bar">
+      <button class="list_button">☰</button>
+    </div>
+    <nav class="list">
+        <a href="#">P&D</a>
+        <a href="#">FE</a>
+        <a href="#">BE</a>
+    </nav>
+    <div class = "main-container">
+      <div class = "left-container">
+        <div class = "intro-container">
+          <img src="likelion.png" alt="13th-fe-likelion" width="240px"/>
+          <div id="title">
+            <div>영남대학교</div>
+            <div>멋쟁이사자처럼</div>
+            <div>13기</div>
+          </div>
+        </div>
+        <div class ="intro">
+          <div id="intro-txt">여러분을 진심으로 환영합니다!</div>
+          <div><br></div>
+          <div id="intro-txt">
+            멋쟁이사자처럼은 성장 의지를 가진 사람들을 돕기 위해 존재합니다. 그리고 이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라고 생각합니다!
+          </div>
+        </div>
+        <div class = "box-container">
+          <div class="box-txt">P&D</div>
+          <div class="box-txt">FE</div>
+          <div class="box-txt">BE</div>
+        </div>
+      </div>
+      <div class = "right-container">
+        <div class ="login-container">
+          <div class="login-head">LOGIN</div>
+          <div class ="login-form">
+            <form>
+              <div class = "input-container">
+                <span id="icon">  
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#888" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.87 0-7 3.13-7 7v1h14v-1c0-3.87-3.13-7-7-7z"/>
+                  </svg>
+                </span>
+                <input type="text" id="login" name="username" placeholder="username" required />
+              </div>
+              <div class = "input-container">
+                <span id="icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9v4H4v8h16v-8h-1v-4c0-3.87-3.13-7-7-7zm0 2c3.31 0 6 2.69 6 6v4H6v-4c0-3.31 2.69-6 6-6z" fill="#888"/>
+                  </svg>
+                </span>
+                <input type ="text" id="login" name="password" placeholder="password" required />
+              </div>
+              <button type = button class="submit">로그인</button> 
+            </form>
+          </div>     
+          <button type = button class="mobile-login">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9v4H4v8h16v-8h-1v-4c0-3.87-3.13-7-7-7zm0 2c3.31 0 6 2.69 6 6v4H6v-4c0-3.31 2.69-6 6-6z" fill="#888"/>
+            </svg>
+          </button> 
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
