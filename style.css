@@ -159,7 +159,7 @@ button {
 
   /* 멋사 이미지 크기 줄이기 */
   img {
-    width: 36px;
+    width: 35px;
     height: 20px;
   }
 
@@ -185,19 +185,20 @@ button {
 
   /* 아래는 모두 크기 조절 */
   p {
-    font-size: 16px;
+    font-size: 18px;
     width: 80%;
   }
 
   h3 {
-    font-size: 30px;
-    width: 20%;
-    height: 150px;
+    font-size: 35px;
+    width: 25%;
+    height: 180px;
   }
 
   #keyword {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 6%;
     margin: 0 10%;
   }
 
