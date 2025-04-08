@@ -1,0 +1,170 @@
+* {
+  background-color: black;
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 120px;
+  margin-left: 150px;
+}
+.lion-image {
+  width: 250px;
+}
+.text1 {
+  font-size: 33px;
+  color: white;
+  font-weight: 800;
+}
+.text2 {
+  font-size: 25px;
+  color: white;
+  margin-left: 160px;
+  margin-top: 40px;
+}
+.text3 {
+  font-size: 25px;
+  color: white;
+  margin-left: 160px;
+  margin-top: 30px;
+}
+.wrapper-box {
+  margin-left: -10px;
+  margin-top: 30px;
+  display: flex;
+}
+.box {
+  width: 160px;
+  height: 180px;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 15%;
+  border: 2px solid orange;
+  text-align: center;
+  line-height: 180px;
+  padding: 20px 8px;
+  font-weight: 900;
+  font-size: 40px;
+}
+h1 {
+  font-size: 40px;
+  color: white;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  margin-left: 800px;
+  margin-top: -500px;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+}
+.icon {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon i {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: gray;
+  background-color: white;
+}
+
+.icon input {
+  width: 60%;
+  padding: 20px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 90px;
+}
+input {
+  width: 30%;
+  padding: 20px 100px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 100px;
+  background-color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+button {
+  width: 20%;
+  padding: 10px 20px;
+  background-color: orange;
+  margin: 5px 0;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.loginbutton {
+  display: none;
+}
+
+@media screen and (max-width: 833px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .text1 {
+    text-align: center;
+  }
+  .text2,
+  .text3 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .wrapper-box {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .box {
+    width: 160px;
+    height: 180px;
+    font-size: 30px;
+    margin: 10px 10px;
+    line-height: 180px;
+  }
+  .login {
+    justify-content: center;
+    display: none;
+    text-align: center;
+    align-items: center;
+    margin: -30px;
+  }
+  .icon input {
+    width: 60%;
+    padding-left: 80px;
+  }
+  .icon i {
+    left: 25%;
+  }
+  button {
+    width: 20%;
+    font-size: 18px;
+  }
+  .loginbutton {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
