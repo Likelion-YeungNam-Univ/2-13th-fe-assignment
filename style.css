@@ -50,6 +50,10 @@ body {
     color: var(--text-color);
     text-decoration: none;
 }
+  
+.list a:hover {
+    color: orange;
+}
 
 .list_bar {
     position: absolute;
@@ -130,6 +134,11 @@ body {
     align-content: center;
     margin: 7px;
 }
+  
+.box-txt:hover {
+    background-color: orange;
+    color: white;
+}
 
 .login-container {
     display: flex;
@@ -177,6 +186,12 @@ body {
     border-radius: 40px;
     width: 120px;
     height: 30px;
+    cursor: pointer;
+}
+
+.submit:active {
+    transform: scale(0.95);
+    background-color: darkorange;
 }
 
 .mobile-login {
@@ -236,9 +251,9 @@ body {
     .main-container {
         display: flex;
         flex-direction: column;
-        justify-content: center; /* 가운데 정렬 유지 */
-        align-items: center; /* 수직 가운데 정렬 */
-        height: 100vh; /* 화면 전체 높이를 사용 */
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         padding: 0;
         margin: 0;
     }
@@ -254,18 +269,18 @@ body {
 
     .intro-container {
         display: flex;
-        flex-direction: column; /* 수직 정렬 */
-        justify-content: center; /* 수직 가운데 정렬 */
-        align-items: center; /* 수평 가운데 정렬 */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        width: 100%; /* 화면 전체 너비 */
+        width: 100%;
         height: auto;
     }
 
     .intro-container img {
         display: block;
-        margin: 0 auto; /* 이미지 가운데 정렬 */
-        max-width: 100%; /* 반응형 크기 조정 */
+        margin: 0 auto;
+        max-width: 100%;
         height: auto;
     }
 
@@ -274,5 +289,25 @@ body {
         align-items: center;
         display: flex;
         height: auto;
+    }
+    
+    .list_bar {
+        display: block;
+    }
+    
+    .list {
+        display: none;
+        flex-direction: column;
+        font-size: 20px;
+        align-items: flex-start;
+        background-color: gray;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+    }
+    
+    .list.active {
+        display: flex;
     }
 }
