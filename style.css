@@ -124,3 +124,10 @@ img {
     display: block;
   }
 }
+
+.login.active {
+  display: flex;
+}
+.left.hide {
+  display: none;
+}
