@@ -4,7 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const login = document.querySelector(".login");
 
   loginButton.addEventListener("click", () => {
-    login.classList.toggle("active");
+    const isLoginActive = login.classList.toggle("active");
     left.classList.toggle("hide");
+
+    if (isLoginActive) {
+      loginButton.textContent = "뒤로가기";
+    } else {
+      loginButton.textContent = "로그인";
+    }
   });
 });
